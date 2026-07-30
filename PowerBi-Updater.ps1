@@ -28,7 +28,10 @@ function Pause-Script {
 # Create the routes
 md C:\DISCOS
 md C:\DISCOS\PowerBi
+clear
 # Download the installer
+Write-Host "Descargando instalador, espera a que termine."
+Write-Host "Puede tardar unos minutos..."
 wget "https://download.microsoft.com/download/8/8/0/880bca75-79dd-466a-927d-1abf1f5454b0/PBIDesktopSetup_x64.exe" -OutFile "C:\DISCOS\PowerBi\PBIDesktopSetup_x64.exe"
 
 clear
@@ -42,4 +45,6 @@ Start-Process "C:\DISCOS\PowerBi\PBIDesktopSetup_x64.exe" -Wait
 # Delete the installer.
 # Otherwise, it won't download it when it needs to update again.
 Remove-Item -Path "C:\DISCOS\PowerBi\PBIDesktopSetup_x64.exe" -Force
+Write-Host "¡Finalizado!"
+Pause-Script
 exit
