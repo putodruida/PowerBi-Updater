@@ -1,4 +1,4 @@
-*[ESP]*
+***[ESP]***
 
 Programa creado para realizar la descarga del instalador "Power Bi" desde los servidores de Microsoft, y que ejecute la instalación.
 Dado que para actualizarlo, hay que volver a descargarlo siempre y esto ahorra tiempo.
@@ -6,7 +6,7 @@ Dado que para actualizarlo, hay que volver a descargarlo siempre y esto ahorra t
 Se puede usar junto con el programa "RunAsTool" para usuarios que no son administradores, para actualizarlo ellos.
 
 
-*[ENG]*
+***[ENG]***
 
 A program designed to download the "Power BI" installer from Microsoft servers and execute the installation.
 This saves time, as updating the software normally requires downloading it again each time.
