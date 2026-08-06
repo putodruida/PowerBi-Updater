@@ -27,8 +27,8 @@ function Pause-Script {
 
 # Create the routes
 md C:\DISCOS
-md C:\DISCOS\Power Bi
-Remove-Item -Path "C:\DISCOS\Power Bi\PBIDesktopSetup_x64.exe" -Force
+md C:\DISCOS\PowerBi
+Remove-Item -Path "C:\DISCOS\PowerBi\PBIDesktopSetup_x64.exe" -Force
 clear
 # Download the installer
 Write-Host ""
@@ -41,8 +41,7 @@ Write-Host " ************************************ "
 Write-Host " **** ¡NO CIERRES ESTA VENTANA! ***** "
 Write-Host " ************************************ "
 Write-Host ""
-wget "https://download.microsoft.com/download/8/8/0/880bca75-79dd-466a-927d-1abf1f5454b0/PBIDesktopSetup_x64.exe" -OutFile "C:\DISCOS\Power Bi\PBIDesktopSetup_x64.exe"
-
+wget "https://download.microsoft.com/download/8/8/0/880bca75-79dd-466a-927d-1abf1f5454b0/PBIDesktopSetup_x64.exe" -OutFile "C:\DISCOS\PowerBi\PBIDesktopSetup_x64.exe"
 clear
 
 # Write the message on the screen.
@@ -51,11 +50,11 @@ Write-Host "Sigue los pasos de la instalación..."
 Write-Host ""
 
 # Run the installation.
-Start-Process "C:\DISCOS\Power Bi\PBIDesktopSetup_x64.exe" -Wait
+Start-Process "C:\DISCOS\PowerBi\PBIDesktopSetup_x64.exe" -Wait
 
 # Delete the installer.
 # Otherwise, it won't download it when it needs to update again.
-Remove-Item -Path "C:\DISCOS\Power Bi\PBIDesktopSetup_x64.exe" -Force
+Remove-Item -Path "C:\DISCOS\PowerBi\PBIDesktopSetup_x64.exe" -Force
 
 clear
 
